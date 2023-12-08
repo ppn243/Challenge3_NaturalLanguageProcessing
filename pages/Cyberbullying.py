@@ -87,7 +87,7 @@ def transform_text(text):
     return " ".join(y)
 
 
-model = tf.keras.models.load_model('../model_train.h5')
+model = tf.keras.models.load_model('./model_train.h5')
 model.make_predict_function()
 
 with open('../vectorization_config.pkl', 'rb') as f:
