@@ -83,4 +83,4 @@ watchdog==3.0.0
 Werkzeug==3.0.1
 wrapt==1.14.1
 zipp==3.17.0
-nltk==3.8.1
+nltk==3.6.5
