@@ -90,7 +90,7 @@ def transform_text(text):
 model = tf.keras.models.load_model('./model_train.h5')
 model.make_predict_function()
 
-with open('../vectorization_config.pkl', 'rb') as f:
+with open('./vectorization_config.pkl', 'rb') as f:
     tfidf = pickle.load(f)
 loaded_vectorization_layer = tf.keras.layers.TextVectorization.from_config(
     tfidf['config'])
